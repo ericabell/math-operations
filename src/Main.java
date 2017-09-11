@@ -24,6 +24,30 @@ public class Main {
         Double remainder = operand1 % operand2;
 
         showResults(sum, difference, multiplication, division, remainder);
+
+        // Other operators
+        System.out.println("Extra Operators");
+        // postfix
+        operand2++;
+        System.out.println(operand2);
+        operand2--;
+        System.out.println(operand2);
+        // unary
+        ++operand2;
+        System.out.println(operand2);
+        // shift
+        byte result1 = 0b101010 >> 3;
+        System.out.println(result1);
+        // relational
+        if( operand1 >= operand2 ) {
+            System.out.println("Operand1 greater than or equal to operand2");
+        }
+        // bitwise
+        byte result2 = 0b0110 & 0b0101;
+        System.out.println("Result of AND: " + result2);
+
+
+
     }
 
     public static void showResults(Double sum,
