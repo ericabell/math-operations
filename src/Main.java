@@ -7,10 +7,14 @@ public class Main {
 
         System.out.println("Please enter a number:");
         String firstString = scanner.nextLine();
-        System.out.println("Please enter a number:");
-        String secondString = scanner.nextLine();
-
         Double operand1 = Double.parseDouble(firstString);
+
+        String secondString = "0";
+        while( Double.parseDouble(secondString) == 0.0 ) {
+            System.out.println("Please enter a number:");
+            secondString = scanner.nextLine();
+        }
+
         Double operand2 = Double.parseDouble(secondString);
 
         Double sum = operand1 + operand2;
