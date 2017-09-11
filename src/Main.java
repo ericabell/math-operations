@@ -5,27 +5,31 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+        // grab a string and convert to a double
         System.out.println("Please enter a number:");
         String firstString = scanner.nextLine();
         Double operand1 = Double.parseDouble(firstString);
 
+
+        // be sure the second number isn't zero
         String secondString = "0";
         while( Double.parseDouble(secondString) == 0.0 ) {
             System.out.println("Please enter a number:");
             secondString = scanner.nextLine();
         }
-
         Double operand2 = Double.parseDouble(secondString);
 
+        // perform some basic operations on those inputs
         Double sum = operand1 + operand2;
         Double difference = operand1 - operand2;
         Double division = operand1 / operand2;
         Double multiplication = operand1 * operand2;
         Double remainder = operand1 % operand2;
 
+        // print the results to the console
         showResults(sum, difference, multiplication, division, remainder);
 
-        // Other operators
+        // Other operators -- EXTRA
         System.out.println("Extra Operators");
         // postfix
         operand2++;
