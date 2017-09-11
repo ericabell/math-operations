@@ -45,8 +45,21 @@ public class Main {
         // bitwise
         byte result2 = 0b0110 & 0b0101;
         System.out.println("Result of AND: " + result2);
-
-
+        byte result3 = 0b1 | 0b0;
+        System.out.println("Result of OR: " + result3);
+        // logical
+        if( true && false ) {
+            System.out.println("This will never print!");
+        } else {
+            System.out.println("This will always print");
+        }
+        // ternary
+        Double minVal = (operand1 < operand2) ? operand1 : operand2;
+        System.out.println("min of operand1 and operand2 is: " + minVal);
+        // assignment
+        operand2 += 4;
+        operand2 *= 5;
+        System.out.println(operand2);
 
     }
 
